@@ -48,7 +48,7 @@ export class DetailsPage implements OnInit {
       Genre: new FormControl(this.item.Genre,Validators.required),
       Starring: new FormControl(this.item.Starring,Validators.required),
       ShowTime: new FormControl(this.item.ShowTime,Validators.required),
-      Reviews: new FormControl(this.item.Reviewsnic ,Validators.required)
+      Reviews: new FormControl(this.item.Reviews,Validators.required)
     });
   }
 
