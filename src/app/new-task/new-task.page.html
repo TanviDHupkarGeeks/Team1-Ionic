@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>New Task</ion-title>
+    <ion-title>Add New Movie</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -36,6 +36,14 @@
     <ion-item>
       <ion-label position="floating" color="primary">Starring</ion-label>
       <ion-input type="text" formControlName="Starring"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">ShowTime</ion-label>
+      <ion-input type="text" formControlName="ShowTime"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Reviews</ion-label>
+      <ion-input type="text" formControlName="Reviews"></ion-input>
     </ion-item>
     <ion-button class="submit-btn" expand="block" type="submit" [disabled]="!validations_form.valid">Create</ion-button>
   </form>

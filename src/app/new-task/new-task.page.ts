@@ -35,7 +35,11 @@ export class NewTaskPage implements OnInit {
     this.image = "./assets/imgs/default_image.jpg";
     this.validations_form = this.formBuilder.group({
       title: new FormControl('', Validators.required),
-      description: new FormControl('', Validators.required)
+      description: new FormControl('', Validators.required),
+      Genre: new FormControl('',Validators.required),
+      Starring: new FormControl('',Validators.required),
+      ShowTime: new FormControl('',Validators.required),
+      Reviews: new FormControl('',Validators.required)
     });
   }
 
@@ -43,7 +47,11 @@ export class NewTaskPage implements OnInit {
     let data = {
       title: value.title,
       description: value.description,
-      image: this.image
+      image: this.image,
+      Genre:value.Genre,
+      Starring:value.Starring,
+      ShowTime:value.ShowTime,
+      Reviews:value.Reviews
     }
     this.firebaseService.createTask(data)
     .then(

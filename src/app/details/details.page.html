@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Details</ion-title>
+    <ion-title>List of Added Movies</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -28,6 +28,22 @@
     <ion-item>
       <ion-label position="floating" color="primary">Description</ion-label>
       <ion-input type="text" formControlName="description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Genre</ion-label>
+      <ion-input type="text" formControlName="Genre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Starring</ion-label>
+      <ion-input type="text" formControlName="Starring"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">ShowTime</ion-label>
+      <ion-input type="text" formControlName="ShowTime"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Reviews</ion-label>
+      <ion-input type="text" formControlName="Reviews"></ion-input>
     </ion-item>
     <ion-button class="submit-button" expand="block" type="submit" [disabled]="!validations_form.valid">Save</ion-button>
   </form>
