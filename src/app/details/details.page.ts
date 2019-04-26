@@ -45,10 +45,10 @@ export class DetailsPage implements OnInit {
     this.validations_form = this.formBuilder.group({
       title: new FormControl(this.item.title, Validators.required),
       description: new FormControl(this.item.description, Validators.required),
-      Genre: new FormControl('',Validators.required),
-      Starring: new FormControl('',Validators.required),
-      ShowTime: new FormControl('',Validators.required),
-      Reviews: new FormControl('',Validators.required)
+      Genre: new FormControl(this.item.Genre,Validators.required),
+      Starring: new FormControl(this.item.Starring,Validators.required),
+      ShowTime: new FormControl(this.item.ShowTime,Validators.required),
+      Reviews: new FormControl(this.item.Reviewsnic ,Validators.required)
     });
   }
 

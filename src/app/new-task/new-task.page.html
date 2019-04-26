@@ -11,7 +11,7 @@
   <div>
     <ion-row no-padding>
       <ion-col size="6" offset="3">
-        <img [src]="image" alt="this is the image"/>
+        <img [src]="image 1.jpg" alt="this is the image"/>
       </ion-col>
     </ion-row>
     <ion-row no-padding>
@@ -33,6 +33,7 @@
       <ion-label position="floating" color="primary">Genre</ion-label>
       <ion-input type="text" formControlName="Genre"></ion-input>
     </ion-item>
+  
     <ion-item>
       <ion-label position="floating" color="primary">Starring</ion-label>
       <ion-input type="text" formControlName="Starring"></ion-input>
@@ -45,6 +46,6 @@
       <ion-label position="floating" color="primary">Reviews</ion-label>
       <ion-input type="text" formControlName="Reviews"></ion-input>
     </ion-item>
-    <ion-button class="submit-btn" expand="block" type="submit" [disabled]="!validations_form.valid">Create</ion-button>
+    <ion-button class="submit-btn" expand="block" type="submit" >Create</ion-button>
   </form>
 </ion-content>
