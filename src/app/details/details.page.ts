@@ -48,7 +48,8 @@ export class DetailsPage implements OnInit {
       Genre: new FormControl(this.item.Genre,Validators.required),
       Starring: new FormControl(this.item.Starring,Validators.required),
       ShowTime: new FormControl(this.item.ShowTime,Validators.required),
-      Reviews: new FormControl(this.item.Reviews,Validators.required)
+      Reviews: new FormControl(this.item.Reviews,Validators.required),
+      ReleaseDate: new FormControl(this.item.Reviews,Validators.required)
     });
   }
 
@@ -60,7 +61,8 @@ export class DetailsPage implements OnInit {
       Genre:value.Genre,
       Starring:value.Starring,
       ShowTime:value.ShowTime,
-      Reviews:value.Reviews
+      Reviews:value.Reviews,
+      ReleaseDate:value.ReleaseDate
     }
     this.firebaseService.updateTask(this.item.id,data)
     .then(
